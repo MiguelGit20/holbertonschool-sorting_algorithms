@@ -10,7 +10,7 @@ void sortedInsert(listint_t **list, listint_t *newNode)
 	listint_t *current;
 
 	if (*list == NULL)
-		*list = newNode;
+		return;
 	else if ((*list)->n >= newNode->n)
 	{
 		newNode->next = *list;
